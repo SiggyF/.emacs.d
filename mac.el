@@ -72,8 +72,11 @@
   (setq magnars/presentation-font "-apple-Monaco-medium-normal-normal-*-28-*-*-*-m-0-iso10646-1")
   (set-face-attribute 'default nil :font magnars/default-font))
 
+;; mac friendly font
+(set-face-attribute 'default nil :font "Monaco-16")
+
 ;; keybinding to toggle full screen mode
-(global-set-key (quote [M-f10]) (quote ns-toggle-fullscreen))
+(global-set-key (kbd "M-s-ƒ") 'ns-toggle-fullscreen)
 
 ;; Move to trash when deleting stuff
 (setq delete-by-moving-to-trash t
@@ -84,8 +87,5 @@
 
 ;; Don't open files from the workspace in a new frame
 (setq ns-pop-up-frames nil)
-
-;; Use aspell for spell checking: brew install aspell --lang=en
-(setq ispell-program-name "/usr/local/bin/aspell")
 
 (provide 'mac)
