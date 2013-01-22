@@ -92,6 +92,11 @@
 (eval-after-load 'magit '(require 'setup-magit))
 (eval-after-load 'grep '(require 'setup-rgrep))
 (eval-after-load 'shell '(require 'setup-shell))
+(eval-after-load 'python '(require 'setup-python))
+
+;; We're setting up fortran by hand
+(require 'setup-fortran)
+
 (require 'setup-hippie)
 (require 'setup-yasnippet)
 (require 'setup-perspective)
@@ -173,8 +178,6 @@
 
 ;; Diminish stuff
 (require 'diminish)
-
-
 
 
 ;; Elisp go-to-definition with M-. and back again with M-,
