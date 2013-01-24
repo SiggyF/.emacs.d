@@ -101,4 +101,9 @@
 (add-to-list 'auto-mode-alist '("access\\.conf\\'" . apache-mode))
 (add-to-list 'auto-mode-alist '("sites-\\(available\\|enabled\\)/" . apache-mode))
 
+
+;; These are also fortran files
+(add-to-list 'auto-mode-alist '("\\.ftn" . f90-mode))
+(add-to-list 'auto-mode-alist '("\\.F90" . f90-mode))
+
 (provide 'mode-mappings)

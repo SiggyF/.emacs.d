@@ -160,7 +160,8 @@ Symbols matching the text at point are put first in the completion list."
 
 (defun untabify-buffer ()
   (interactive)
-  (untabify (point-min) (point-max)))
+  (untabify (point-min) (point-max))
+  )
 
 (defun indent-buffer ()
   (interactive)
@@ -171,7 +172,7 @@ Symbols matching the text at point are put first in the completion list."
 Does not indent buffer, because it is used for a before-save-hook, and that
 might be bad."
   (interactive)
-  (untabify-buffer)
+  (if (not indent-tabs-mode) (untabify-buffer))
   (delete-trailing-whitespace)
   (set-buffer-file-coding-system 'utf-8))
 

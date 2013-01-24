@@ -1,8 +1,3 @@
-;; These are also fortran files
-(setq auto-mode-alist
-      (cons '("\\.F90" . f90-mode) auto-mode-alist))
-(setq auto-mode-alist
-      (cons '("\\.ftn" . f90-mode) auto-mode-alist))
 
 
 ;; Show some punch card stuff
