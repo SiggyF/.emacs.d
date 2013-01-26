@@ -54,6 +54,7 @@
 (defun init--install-packages ()
   (packages-install
    '(exec-path-from-shell
+     melpa
      magit
      paredit
      move-text
@@ -63,6 +64,7 @@
      smartparens
      ido-vertical-mode
      simple-httpd
+     slime-js
      nodejs-repl
      restclient
      highlight-escape-sequences
@@ -71,7 +73,32 @@
      gitconfig-mode
      gitignore-mode
      clojure-mode
-     nrepl)))
+     clojure-test-mode
+     nrepl
+     python
+     virtualenv
+     ess
+     auctex
+     )))
+
+
+
+;; Evaluate later
+;; (cons 'elnode marmalade)
+;; (cons 'abl-mode melpa)
+;; (cons 'ein melpa)
+;; (cons 'elpy melpa)
+;; (cons 'flymake-python-pyflakes melpa)
+;; (cons 'jedi melpa)
+;; (cons 'prelude-python melpa)
+;; (cons 'pyregexp melpa)
+;; (cons 'python-magic melpa)
+;; (cons 'predictive marmalade)
+
+
+
+
+
 
 (condition-case nil
     (init--install-packages)
