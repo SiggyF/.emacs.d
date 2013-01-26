@@ -67,7 +67,22 @@
    (cons 'gitignore-mode melpa)
    (cons 'clojure-mode melpa)
    (cons 'clojure-test-mode melpa)
-   (cons 'nrepl melpa)))
+   ;; (cons 'abl-mode melpa)
+   ;; (cons 'ein melpa)
+   ;; (cons 'elpy melpa)
+   ;; (cons 'flymake-python-pyflakes melpa)
+   ;; (cons 'jedi melpa)
+   ;; (cons 'prelude-python melpa)
+   ;; (cons 'pyregexp melpa)
+   (cons 'python melpa)
+   (cons 'virtualenv melpa)
+   ;; (cons 'python-magic melpa)
+   (cons 'nrepl melpa)
+   (cons 'ess melpa)
+   ;; (cons 'predictive marmalade)
+   (cons 'auctex gnu)
+
+   ))
 
 (condition-case nil
     (init--install-packages)
