@@ -73,7 +73,12 @@
   (set-face-attribute 'default nil :font magnars/default-font))
 
 ;; mac friendly font
-(set-face-attribute 'default nil :font "Monaco-16")
+(when window-system
+  (set-face-attribute 'default nil :font "Monaco-16")
+  )
+
+;; Get meta key combos working ....
+(set-keyboard-coding-system nil)
 
 ;; keybinding to toggle full screen mode
 (global-set-key (kbd "M-s-ƒ") 'ns-toggle-fullscreen)
