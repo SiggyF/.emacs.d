@@ -4,8 +4,10 @@
 
 ;; Mac specific options.
 (when is-mac
-  ;; Zoom in and enhance...
-  (ns-toggle-fullscreen)
+  ;; Zoom in and enhance... But not in the shell otherwise it breaks....
+  (when window-system
+    (ns-toggle-fullscreen)
+    )
 
   ;; Set gls as default ls (for --dired)
   (setq ls-lisp-use-insert-directory-program t)
