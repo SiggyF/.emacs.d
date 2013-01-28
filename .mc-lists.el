@@ -120,6 +120,11 @@
         touch-buffer-file
         transpose-params
         transpose-sexps
+=======
+        wdired-change-to-wdired-mode
+        wdired-finish-edit
+        wgrep-finish-edit
+>>>>>>> key bindings and cleanup
         wrap-region-trigger
         yank-indented
         yas/expand
@@ -128,6 +133,7 @@
 
 (setq mc/cmds-to-run-once
       '(
+<<<<<<< HEAD
         adv-insert-new-number
         cleanup-buffer
         describe-key
@@ -145,6 +151,10 @@
         mc/add-cursors-to-all-matches
         persp-switch
         shell
+        dired-clean-directory
+        js2r-extract-var
+        js2r-rename-var
+        python-indent-dedent-line-backspace
         smex
         wgrep-change-to-wgrep-mode
         wgrep-finish-edit
