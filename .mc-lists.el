@@ -47,6 +47,9 @@
         sgml-delete-tag
         sgml-slash
         slime-space
+        wdired-change-to-wdired-mode
+        wdired-finish-edit
+        wgrep-finish-edit
         wrap-region-trigger
         yank-indented
         yas/expand
@@ -54,8 +57,10 @@
 
 (setq mc/cmds-to-run-once
       '(
+        dired-clean-directory
         js2r-extract-var
         js2r-rename-var
+        python-indent-dedent-line-backspace
         smex
         wgrep-change-to-wgrep-mode
         ))

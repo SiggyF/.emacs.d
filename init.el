@@ -68,7 +68,7 @@
    (cons 'clojure-mode melpa)
    (cons 'clojure-test-mode melpa)
    ;; (cons 'abl-mode melpa)
-   ;; (cons 'ein melpa)
+   (cons 'ein melpa)
    ;; (cons 'elpy melpa)
    ;; (cons 'flymake-python-pyflakes melpa)
    ;; (cons 'jedi melpa)
