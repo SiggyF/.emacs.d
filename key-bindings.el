@@ -133,9 +133,12 @@
 
 ;; Window switching
 (windmove-default-keybindings) ;; Shift+direction
+
+
 (global-set-key (kbd "C-x -") 'toggle-window-split)
 (global-set-key (kbd "C-x C--") 'rotate-windows)
 (global-unset-key (kbd "C-x C-+")) ;; don't zoom like this
+
 
 (global-set-key (kbd "C-x 3") 'split-window-right-and-move-there-dammit)
 
