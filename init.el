@@ -118,6 +118,10 @@
 (eval-after-load 'shell '(require 'setup-shell))
 (eval-after-load 'python '(require 'setup-python))
 
+;; Predictive mode
+(eval-after-load 'predictive '(require 'setup predictive))
+
+
 ;; We're setting up fortran by hand
 (require 'setup-fortran)
 
@@ -179,6 +183,8 @@
 (require 'smart-forward)
 (require 'change-inner)
 (require 'multifiles)
+
+
 
 ;; Fill column indicator
 (require 'fill-column-indicator)
