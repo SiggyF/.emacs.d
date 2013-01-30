@@ -9,6 +9,8 @@
 ;; Set path to dependencies
 (setq site-lisp-dir
       (expand-file-name "site-lisp" user-emacs-directory))
+;; Add the predictive path early
+(add-to-list 'load-path (expand-file-name "predictive" user-emacs-directory))
 
 ;; Set up load path
 (add-to-list 'load-path user-emacs-directory)
@@ -118,8 +120,14 @@
 (eval-after-load 'shell '(require 'setup-shell))
 (eval-after-load 'python '(require 'setup-python))
 
+
 ;; Predictive mode
-(eval-after-load 'predictive '(require 'setup predictive))
+
+(add-to-list 'load-path (expand-file-name "predictive/html" user-emacs-directory))
+(add-to-list 'load-path (expand-file-name "predictive/latex" user-emacs-directory))
+(add-to-list 'load-path (expand-file-name "predictive/texinfo" user-emacs-directory))
+(require 'predictive)
+(eval-after-load 'predictive '(require 'setup-predictive))
 
 
 ;; We're setting up fortran by hand
