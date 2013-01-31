@@ -81,6 +81,8 @@
      virtualenv
      ess
      auctex
+     epc
+     jedi
      )))
 
 
@@ -130,6 +132,7 @@
 (eval-after-load 'predictive '(require 'setup-predictive))
 
 
+(require 'auto-complete)
 ;; We're setting up fortran by hand
 (require 'setup-fortran)
 
