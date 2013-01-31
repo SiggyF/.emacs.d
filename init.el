@@ -73,7 +73,8 @@
    (cons 'ein melpa)
    ;; (cons 'elpy melpa)
    ;; (cons 'flymake-python-pyflakes melpa)
-   ;; (cons 'jedi melpa)
+   (cons 'epc melpa)
+   (cons 'jedi melpa)
    ;; (cons 'prelude-python melpa)
    ;; (cons 'pyregexp melpa)
    (cons 'python melpa)
@@ -117,6 +118,7 @@
 (eval-after-load 'predictive '(require 'setup-predictive))
 
 
+(require 'auto-complete)
 ;; We're setting up fortran by hand
 (require 'setup-fortran)
 
