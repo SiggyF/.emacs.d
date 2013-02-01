@@ -147,7 +147,7 @@ Does not indent buffer, because it is used for a before-save-hook, and that
 might be bad."
   (interactive)
   (if (not indent-tabs-mode) (untabify-buffer))
-  (delete-trailing-whitespace)
+  (if (not f90-mode) (delete-trailing-whitespace))
   (set-buffer-file-coding-system 'utf-8))
 
 (defun cleanup-buffer ()
