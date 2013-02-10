@@ -110,8 +110,11 @@
         path = site-lisp/fold-this
         url = https://github.com/magnars/fold-this.el.git
 [submodule "site-lisp/python"]
-    path = site-lisp/python
-    url = https://github.com/fgallina/python.el.git
+        path = site-lisp/python
+        url = https://github.com/fgallina/python.el.git
 [submodule "site-lisp/auto-complete"]
-	path = site-lisp/auto-complete
-	url = https://github.com/auto-complete/auto-complete.git
+        path = site-lisp/auto-complete
+        url = https://github.com/auto-complete/auto-complete.git
+[submodule "site-lisp/clj-refactor"]
+        path = site-lisp/clj-refactor
+        url = https://github.com/magnars/clj-refactor.el.git

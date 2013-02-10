@@ -26,6 +26,11 @@
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
 
+;; Extra multiple cursors stuff
+(global-set-key (kbd "C-~") 'mc/reverse-regions)
+(global-set-key (kbd "M-~") 'mc/sort-regions)
+(global-set-key (kbd "H-~") 'mc/insert-numbers)
+
 ;; Set anchor to start rectangular-region-mode
 (global-set-key (kbd "H-SPC") 'set-rectangular-region-anchor)
 
@@ -106,6 +111,8 @@
 (global-set-key (kbd "C-x -") 'rotate-windows)
 (global-set-key (kbd "C-x C--") 'toggle-window-split)
 
+(global-set-key (kbd "C-x 3") 'split-window-right-and-move-there-dammit)
+
 ;; Add region to *multifile*
 (global-set-key (kbd "C-!") 'mf/mirror-region-in-multifile)
 
@@ -149,11 +156,10 @@
 (global-set-key (kbd "C-S-r") 'isearch-backward)
 
 ;; Move more quickly
-(global-set-key (kbd "C-S-n") (lambda () (interactive) (next-line 5)))
-(global-set-key (kbd "C-S-p") (lambda () (interactive) (previous-line 5)))
-(global-set-key (kbd "C-S-f") (lambda () (interactive) (forward-char 5)))
-(global-set-key (kbd "C-S-b") (lambda () (interactive) (backward-char 5)))
-;; Convenience on ThinkPad Keyboard: Use back/forward as pg up/down
+(global-set-key (kbd "C-S-n") (lambda () (interactive) (ignore-errors (next-line 5))))
+(global-set-key (kbd "C-S-p") (lambda () (interactive) (ignore-errors (previous-line 5))))
+(global-set-key (kbd "C-S-f") (lambda () (interactive) (ignore-errors (forward-char 5))))
+(global-set-key (kbd "C-S-b") (lambda () (interactive) (ignore-errors (backward-char 5))))
 
 (global-set-key (kbd "<XF86Back>") 'scroll-down)
 (global-set-key (kbd "<XF86Forward>") 'scroll-up)
