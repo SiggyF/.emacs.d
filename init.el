@@ -55,6 +55,7 @@
 ;; Install extensions if they're missing
 (defun init--install-packages ()
   (packages-install
+<<<<<<< HEAD
    '(exec-path-from-shell
      melpa
      magit
