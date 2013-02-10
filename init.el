@@ -62,6 +62,7 @@
    (cons 'gist melpa)
    (cons 'htmlize melpa)
    (cons 'elisp-slime-nav melpa)
+
    ;(cons 'elnode marmalade)
    (cons 'slime-js marmalade)
    (cons 'git-commit-mode melpa)
@@ -69,6 +70,7 @@
    (cons 'gitignore-mode melpa)
    (cons 'clojure-mode melpa)
    (cons 'clojure-test-mode melpa)
+
    ;; (cons 'abl-mode melpa)
    (cons 'ein melpa)
    ;; (cons 'elpy melpa)

@@ -13,12 +13,18 @@
         change-inner
         change-number-at-point
         change-outer
+        completion-self-insert
         cua-replace-region
         cua-set-mark
+        dabbrev-expand
         delete-blank-lines
+        delete-horizontal-space
         dired-back-to-start-of-files
         duplicate-current-line-or-region
+        end-of-buffer
         eval-and-replace
+        f90-electric-insert
+        f90-indent-new-line
         fold-this
         forward-paragraph
         html-wrap-in-tag
@@ -30,6 +36,7 @@
         kill-region-or-backward-word
         magit-stage-item
         markdown-enter-key
+        mf/save-original-buffers
         move-line-down
         move-line-up
         new-line-above
@@ -58,6 +65,7 @@
 (setq mc/cmds-to-run-once
       '(
         dired-clean-directory
+        eval-print-last-sexp
         js2r-extract-var
         js2r-rename-var
         python-indent-dedent-line-backspace
