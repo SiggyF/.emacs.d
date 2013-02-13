@@ -3,6 +3,7 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        TeX-insert-backslash
         ac-complete
         back-to-indentation-or-beginning
         backward-sexp
@@ -23,6 +24,7 @@
         dired-back-to-start-of-files
         duplicate-current-line-or-region
         end-of-buffer
+        end-of-visual-line
         eval-and-replace
         f90-electric-insert
         f90-indent-new-line
@@ -97,9 +99,9 @@
 (setq mc/cmds-to-run-once
       '(
         dired-clean-directory
-        eval-print-last-sexp
         dired-toggle-read-only
         eval-expression
+        eval-print-last-sexp
         goto-line-with-feedback
         ido-switch-buffer
         js2r-extract-var
