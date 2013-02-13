@@ -133,10 +133,11 @@
 (eval-after-load 'predictive '(require 'setup-predictive))
 
 
+
 (require 'auto-complete)
 ;; We're setting up fortran by hand
 (require 'setup-fortran)
-
+(require 'setup-latex)
 (require 'setup-hippie)
 (require 'setup-yasnippet)
 (require 'setup-perspective)

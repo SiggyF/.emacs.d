@@ -19,6 +19,9 @@
     (funcall mode-name-loc 1)
     (define-key (mode-keymap mode-name-loc) key action)))
 
+(defun turn-off-tool-bar ()
+  (tool-bar-mode -1))
+
 (defun create-scratch-buffer nil
   "create a new scratch buffer to work in. (could be *scratch* - *scratchX*)"
   (interactive)

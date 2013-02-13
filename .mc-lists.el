@@ -3,6 +3,7 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        TeX-insert-backslash
         ac-complete
         adv-dash
         adv-dot
@@ -29,6 +30,7 @@
         dired-back-to-start-of-files
         duplicate-current-line-or-region
         end-of-buffer
+        end-of-visual-line
         eval-and-replace
         f90-electric-insert
         f90-indent-new-line
@@ -126,11 +128,9 @@
         touch-buffer-file
         transpose-params
         transpose-sexps
-=======
         wdired-change-to-wdired-mode
         wdired-finish-edit
         wgrep-finish-edit
->>>>>>> key bindings and cleanup
         wrap-region-trigger
         yank-indented
         yas/expand
@@ -139,13 +139,14 @@
 
 (setq mc/cmds-to-run-once
       '(
-<<<<<<< HEAD
         adv-insert-new-number
         cleanup-buffer
         describe-key
+        dired-clean-directory
         dired-toggle-read-only
         edebug-next-mode
         eval-expression
+        eval-print-last-sexp
         goto-line-with-feedback
         handle-switch-frame
         ido-switch-buffer
