@@ -110,6 +110,7 @@
 (eval-after-load 'grep '(require 'setup-rgrep))
 (eval-after-load 'shell '(require 'setup-shell))
 (eval-after-load 'python '(require 'setup-python))
+(eval-after-load 'auto-complete '(require setup-autocomplete))
 
 
 ;; Predictive mode
