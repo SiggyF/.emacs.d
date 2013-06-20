@@ -12,4 +12,8 @@
   ;; Set gls as default ls (for --dired)
   (setq ls-lisp-use-insert-directory-program t)
   (setq insert-directory-program "gls")
-  )
+
+  (setq org-mobile-directory "~/Dropbox/org")
+  (setq org-directory "~/Documents/checkouts/baart_f/documents/org")
+  (setq org-mobile-inbox-for-pull "~/Dropbox/org/from-mobile.org")
+)
