@@ -63,7 +63,6 @@
      gist
      htmlize
      visual-regexp
-     smartparens
      ido-vertical-mode
      simple-httpd
      slime-js
@@ -88,6 +87,7 @@
 
 
 ;; Evaluate later
+;; smartparens
 ;; (cons 'elnode marmalade)
 ;; (cons 'abl-mode melpa)
 ;; (cons 'ein melpa)
