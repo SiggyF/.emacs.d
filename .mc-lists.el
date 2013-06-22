@@ -109,6 +109,7 @@
         sgml-slash
         skeleton-pair-insert-maybe
         slime-space
+<<<<<<< HEAD
         sp--self-insert-command
         sp-remove-active-pair-overlay
         sp-self-insert-command

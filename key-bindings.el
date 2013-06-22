@@ -8,9 +8,12 @@
 (global-set-key (kbd "C-:") 'hippie-expand-lines)
 (global-set-key (kbd "C-,") 'completion-at-point)
 
+<<<<<<< HEAD
 (require 'misc)
 (global-set-key (kbd "s-.") 'copy-from-above-command)
 
+=======
+>>>>>>> 56194346ec507f54fe96a99f04660bfc42b0e24e
 ;; smart M-x
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)

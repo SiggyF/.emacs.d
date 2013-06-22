@@ -55,7 +55,6 @@
 ;; Install extensions if they're missing
 (defun init--install-packages ()
   (packages-install
-<<<<<<< HEAD
    '(exec-path-from-shell
      melpa
      magit
@@ -222,7 +221,6 @@
 
 ;; Diminish stuff
 (require 'diminish)
-
 
 ;; Elisp go-to-definition with M-. and back again with M-,
 (autoload 'elisp-slime-nav-mode "elisp-slime-nav")
