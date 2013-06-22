@@ -1,0 +1,6 @@
+(require 'auto-complete)
+(ac-set-trigger-key "TAB")
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
+(require 'auto-complete-config)
+(ac-config-default)
+(provide 'setup-autocomplete)
