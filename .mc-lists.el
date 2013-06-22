@@ -3,6 +3,7 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        LaTeX-babel-insert-hyphen
         TeX-insert-backslash
         ac-complete
         adv-dash
@@ -12,6 +13,7 @@
         adv-tab
         back-to-indentation-or-beginning
         backward-sexp
+        beginning-of-visual-line
         c-electric-backspace
         c-electric-delete-forward
         c-electric-paren
@@ -100,6 +102,7 @@
         paredit-wrap-round
         paredit-wrap-round-from-behind
         paredit-wrap-square
+        python-indent-electric-colon
         quoted-insert
         save-region-or-current-line
         sgml-delete-tag
@@ -162,7 +165,9 @@
         eval-print-last-sexp
         js2r-extract-var
         js2r-rename-var
+        mouse-save-then-kill
         python-indent-dedent-line-backspace
+        sh-maybe-here-document
         smex
         wgrep-change-to-wgrep-mode
         wgrep-finish-edit
