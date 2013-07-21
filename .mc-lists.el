@@ -4,14 +4,13 @@
 (setq mc/cmds-to-run-for-all
       '(
         *table--cell-self-insert-command
-        <<<<<<<
-        HEAD
         LaTeX-babel-insert-hyphen
         TeX-insert-backslash
         ac-complete
         adv-dash
         adv-dot
         adv-enter
+        adv-gt
         adv-open-curly
         adv-tab
         back-to-indentation-or-beginning
@@ -39,6 +38,7 @@
         eval-and-replace
         f90-electric-insert
         f90-indent-new-line
+        eval-last-sexp
         fold-this
         forward-paragraph
         forward-sentence
@@ -130,6 +130,7 @@
         tagedit-raise-tag
         tagedit-splice-tag
         tern-ac-dot-complete
+        toggle-assert-refute
         toggle-quotes
         touch-buffer-file
         transpose-params
@@ -167,6 +168,7 @@
         mc/add-cursor-on-click
         mc/add-cursors-to-all-matches
         mouse-save-then-kill
+        multiple-cursors-mode
         persp-switch
         python-indent-dedent-line-backspace
         sh-maybe-here-document

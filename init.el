@@ -66,6 +66,13 @@
      ido-vertical-mode
      simple-httpd
      slime-js
+     flycheck
+     flx
+     flx-ido
+     smartparens
+     ido-vertical-mode
+     simple-httpd
+     guide-key
      nodejs-repl
      restclient
      highlight-escape-sequences
@@ -111,7 +118,17 @@
 (require 'sane-defaults)
 
 ;; Setup environment variables from the user's shell.
-(when is-mac (exec-path-from-shell-initialize))
+(when is-mac
+  (require-package 'exec-path-from-shell)
+  (exec-path-from-shell-initialize))
+
+;; guide-key
+(require 'guide-key)
+(setq guide-key/guide-key-sequence '("C-x r" "C-x 4" "C-x v" "C-x 8"))
+(guide-key-mode 1)
+(setq guide-key/highlight-command-regexp "bookmark")
+(setq guide-key/recursive-key-sequence-flag t)
+(setq guide-key/popup-window-position 'bottom)
 
 ;; Setup extensions
 (eval-after-load 'ido '(require 'setup-ido))
@@ -186,8 +203,6 @@
     (load file)))
 
 (require 'expand-region)
-(require 'mark-more-like-this)
-(require 'inline-string-rectangle)
 (require 'multiple-cursors)
 (require 'delsel)
 (require 'jump-char)
