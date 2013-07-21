@@ -3,6 +3,9 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        *table--cell-self-insert-command
+        <<<<<<<
+        HEAD
         LaTeX-babel-insert-hyphen
         TeX-insert-backslash
         ac-complete
@@ -109,7 +112,6 @@
         sgml-slash
         skeleton-pair-insert-maybe
         slime-space
-<<<<<<< HEAD
         sp--self-insert-command
         sp-remove-active-pair-overlay
         sp-self-insert-command
@@ -147,28 +149,28 @@
         cleanup-buffer
         describe-key
         dired-clean-directory
+        dired-clean-directory
         dired-toggle-read-only
         edebug-next-mode
         eval-expression
+        eval-print-last-sexp
         eval-print-last-sexp
         goto-line-with-feedback
         handle-switch-frame
         ido-switch-buffer
         js2r-extract-var
+        js2r-extract-var
+        js2r-rename-var
         js2r-rename-var
         jump-between-source-and-test-files
         magit-status
         mc/add-cursor-on-click
         mc/add-cursors-to-all-matches
-        persp-switch
-        shell
-        dired-clean-directory
-        eval-print-last-sexp
-        js2r-extract-var
-        js2r-rename-var
         mouse-save-then-kill
+        persp-switch
         python-indent-dedent-line-backspace
         sh-maybe-here-document
+        shell
         smex
         wgrep-change-to-wgrep-mode
         wgrep-finish-edit
