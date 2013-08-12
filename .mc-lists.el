@@ -45,6 +45,7 @@
         forward-paragraph
         forward-sentence
         forward-sexp
+        god-mode-repeat
         hippie-expand-no-case-fold
         html-wrap-in-tag
         js2-beginning-of-line
@@ -173,6 +174,7 @@
         mc/add-cursors-to-all-matches
         mouse-save-then-kill
         multiple-cursors-mode
+        god-local-mode
         persp-switch
         python-indent-dedent-line-backspace
         sh-maybe-here-document

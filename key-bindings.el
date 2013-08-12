@@ -45,6 +45,7 @@
 
 ;; Perform general cleanup.
 (global-set-key (kbd "C-c n") 'cleanup-buffer)
+(global-set-key (kbd "C-c C-n") 'cleanup-buffer)
 (global-set-key (kbd "C-c C-<return>") 'delete-blank-lines)
 
 ;; M-i for back-to-indentation
@@ -53,6 +54,7 @@
 ;; Use shell-like backspace C-h, rebind help to F1
 (define-key key-translation-map [?\C-h] [?\C-?])
 (global-set-key (kbd "<f1>") 'help-command)
+(define-key god-local-mode-map (kbd "h") 'backward-delete-char)
 
 (global-set-key (kbd "M-h") 'kill-region-or-backward-word)
 
