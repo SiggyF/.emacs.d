@@ -7,6 +7,8 @@
         LaTeX-babel-insert-hyphen
         TeX-insert-backslash
         ac-complete
+        ace-jump-mode
+        ace-jump-move
         adv-dash
         adv-dot
         adv-enter
@@ -36,9 +38,9 @@
         end-of-buffer
         end-of-visual-line
         eval-and-replace
+        eval-last-sexp
         f90-electric-insert
         f90-indent-new-line
-        eval-last-sexp
         fold-this
         forward-paragraph
         forward-sentence
@@ -147,7 +149,9 @@
 (setq mc/cmds-to-run-once
       '(
         adv-insert-new-number
+        beginning-of-buffer
         cleanup-buffer
+        comint-interrupt-subjob
         describe-key
         dired-clean-directory
         dired-clean-directory

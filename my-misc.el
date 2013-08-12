@@ -18,6 +18,14 @@
                                   indentation space-after-tab)
       whitespace-line-column 80)
 
+
+(defadvice whitespace-cleanup (around whitespace-cleanup-indent-tab
+                                      activate)
+  "Fix whitespace-cleanup indent-tabs-mode bug"
+  (let ((whitespace-indent-tabs-mode indent-tabs-mode)
+        (whitespace-tab-width tab-width))
+    ad-do-it))
+
 ;; Add Urban Dictionary to webjump (C-x g)
 (eval-after-load "webjump"
   '(add-to-list 'webjump-sites '("Urban Dictionary" .

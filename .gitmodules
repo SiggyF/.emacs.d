@@ -103,9 +103,6 @@
 [submodule "site-lisp/showcss-mode"]
         path = site-lisp/showcss-mode
         url = https://github.com/smmcg/showcss-mode.git
-[submodule "site-lisp/tern"]
-        path = site-lisp/tern
-        url = https://github.com/marijnh/tern.git
 [submodule "site-lisp/smartparens"]
         path = site-lisp/smartparens
         url = https://github.com/Fuco1/smartparens.git
@@ -121,9 +118,6 @@
 [submodule "site-lisp/flx"]
         path = site-lisp/flx
         url = https://github.com/lewang/flx.git
-[submodule "site-lisp/flycheck"]
-        path = site-lisp/flycheck
-        url = https://github.com/lunaryorn/flycheck.git
 [submodule "site-lisp/nrepl-inspect"]
         path = site-lisp/nrepl-inspect
         url = https://github.com/vitalreactor/nrepl-inspect.git
