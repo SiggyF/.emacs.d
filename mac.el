@@ -93,4 +93,7 @@
 ;; Don't open files from the workspace in a new frame
 (setq ns-pop-up-frames nil)
 
+(add-to-list 'Info-default-directory-list "/opt/local/share/info")
+
+
 (provide 'mac)
