@@ -84,7 +84,6 @@
      clojure-mode
      clojure-test-mode
      nrepl
-     python
      virtualenv
      ess
      auctex
