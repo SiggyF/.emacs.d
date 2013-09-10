@@ -80,8 +80,17 @@
 ;; Get meta key combos working ....
 (set-keyboard-coding-system nil)
 
+(defun osx-toggle-fullscreen ()
+  "Toggle full screen"
+  (interactive)
+  (if (fboundp 'ns-toggle-fullscreen)   ;condition
+      (ns-toggle-fullscreen)            ;if true
+    (set-frame-parameter                ;else
+     nil 'fullscreen
+     (when (not (frame-parameter nil 'fullscreen)) 'fullboth))))
+
 ;; keybinding to toggle full screen mode
-(global-set-key (kbd "M-s-ƒ") 'ns-toggle-fullscreen)
+(global-set-key (kbd "M-s-ƒ") 'osx-toggle-fullscreen)
 
 ;; Move to trash when deleting stuff
 (setq delete-by-moving-to-trash t
