@@ -42,15 +42,15 @@
 
 ;; Change nasty paredit keybindings
 (defvar my-nasty-paredit-keybindings-remappings
-  '(("M-s"         "s-s"         paredit-splice-sexp)
-    ("M-<up>"      "s-<up>"      paredit-splice-sexp-killing-backward)
-    ("M-<down>"    "s-<down>"    paredit-splice-sexp-killing-forward)
-    ("C-<right>"   "s-<right>"   paredit-forward-slurp-sexp)
-    ("C-<left>"    "s-<left>"    paredit-forward-barf-sexp)
-    ("C-M-<left>"  "s-S-<left>"  paredit-backward-slurp-sexp)
-    ("C-M-<right>" "s-S-<right>" paredit-backward-barf-sexp)))
+  '(("M-s"         "M-s-s"         paredit-splice-sexp)
+    ("M-<up>"      "M-s-<up>"      paredit-splice-sexp-killing-backward)
+    ("M-<down>"    "M-s-<down>"    paredit-splice-sexp-killing-forward)
+    ("C-<right>"   "M-s-<right>"   paredit-forward-slurp-sexp)
+    ("C-<left>"    "M-s-<left>"    paredit-forward-barf-sexp)
+    ("C-M-<left>"  "M-s-S-<left>"  paredit-backward-slurp-sexp)
+    ("C-M-<right>" "M-s-S-<right>" paredit-backward-barf-sexp)))
 
-(define-key paredit-mode-map (kbd "s-r") 'paredit-raise-sexp)
+(define-key paredit-mode-map (kbd "M-s-r") 'paredit-raise-sexp)
 
 (--each my-nasty-paredit-keybindings-remappings
   (let ((original (car it))

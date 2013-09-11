@@ -56,8 +56,8 @@
 
 ;; mac friendly font
 (when window-system
-  (setq default-font "Monaco-16")
-  (setq presentation-font "Monaco-28")
+  (setq default-font "-apple-Monaco-medium-normal-normal-*-16-*-*-*-m-0-iso10646-1")
+  (setq presentation-font "-apple-Monaco-medium-normal-normal-*-28-*-*-*-m-0-iso10646-1" )
   (set-face-attribute 'default nil :font default-font))
 
 ;; Get meta key combos working ....

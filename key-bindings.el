@@ -98,6 +98,7 @@
 (global-set-key (kbd "s-m") 'jump-char-backward)
 
 ;; vim's ci and co commands
+;;; This breaks the terminal
 ;; (global-set-key (kbd "M-I") 'change-inner)
 ;; (global-set-key (kbd "M-O") 'change-outer)
 
@@ -139,7 +140,8 @@
 
 (global-set-key (kbd "C-x -") 'toggle-window-split)
 (global-set-key (kbd "C-x C--") 'rotate-windows)
-(global-unset-key (kbd "C-x C-+")) ;; don't zoom like this
+;;; do zoom like this, zoom-in does not work in full screen
+;; (global-unset-key (kbd "C-x C-+")) ;; don't zoom like this
 
 
 (global-set-key (kbd "C-x 3") 'split-window-right-and-move-there-dammit)
@@ -308,6 +310,10 @@
 (global-set-key (kbd "C-x C-o in") (ffip-create-pattern-file-finder "*.ini"))
 (global-set-key (kbd "C-x C-o gr") (ffip-create-pattern-file-finder "*.groovy"))
 (global-set-key (kbd "C-x C-o ga") (ffip-create-pattern-file-finder "*.gradle"))
+(global-set-key (kbd "C-x C-o at") (ffip-create-pattern-file-finder "*.a[mc]")) ;autotools
+(global-set-key (kbd "C-x C-o ch") (ffip-create-pattern-file-finder "*.[Cch]*")) ;c/c++
+(global-set-key (kbd "C-x C-o fc") (ffip-create-pattern-file-finder "*.[fF]*")) ;fortran
+(global-set-key (kbd "C-x C-o py") (ffip-create-pattern-file-finder "*.py")) ;fortran
 (global-set-key (kbd "C-x C-o !") (ffip-create-pattern-file-finder "*"))
 
 ;; View occurrence in occur mode
