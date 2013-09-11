@@ -7,8 +7,13 @@
 ;;; Syntax checking
 ;;; - use flycheck
 ;;; Parenthesis and quote helpers
-;;; - paredit is not suitable for python, try autopairs
+;;; - paredit is not suitable for python.
+;;; - autopairmode, not as nice but works with works with regions
 ;;; Whitespace
+;;; - whitespace-mode
+;;; IPython Notebook
+;;; - start with ein:notebooklist-open
+;; elpy?
 
 ;;; Code:
 
@@ -19,15 +24,15 @@
 ;;; Parenthesis
 ;; electric-pair
 ;; show-paren
+(add-hook 'python-mode-hook 'autopair-mode)
+
 
 ;;; Whitespace
 (add-hook 'python-mode-hook 'whitespace-mode)
 
-;;; ein
-;;; Not quite working yet
 
-;; elpy?
 ;; yassnippets
+;;; Using default snippets
 
 ;; Use 4 tabs.
 (setq tab-width 4)

@@ -89,12 +89,14 @@
      clojure-mode
      clojure-test-mode
      nrepl
-     virtualenv
-     ess
-     auctex
-     epc
-     rainbow-mode
-     jedi
+     ess                                ; for R
+     auctex                             ; latex
+     epc                                ; communicating with jedi
+     rainbow-mode                       ; for css colors
+     ein                                ; ipython notebook
+     virtualenv                         ; python virtual envs
+     jedi                               ; auto complete in emacs
+     autopair                           ; match braces in python
      )))
 
 
