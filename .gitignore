@@ -13,3 +13,4 @@ site-lisp/adventur-mode
 .yas-compiled-snippets.el
 .mc-lists.el
 .cask
+ac-comphist.dat
