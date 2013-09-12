@@ -63,25 +63,25 @@
    '(exec-path-from-shell
      melpa
      magit
-     paredit
+     paredit                            ; for lisp
      move-text
-     god-mode
+     god-mode                           ; emacs like
      gist
      htmlize
      visual-regexp
-     flycheck
-     flx
-     flx-ido
+     flycheck                           ; make on the fly
+     flx                                ; fuzzy matching
+     flx-ido                            ; fuzzy matchin in ido
      css-eldoc
-     yasnippet
-     smartparens
-     ido-vertical-mode
+     yasnippet                          ; snippets
+     smartparens                        ; parenthesis around regions
+     ido-vertical-mode                  ; shows ido options in a vertical list
      ido-at-point
-     simple-httpd
-     guide-key
+     simple-httpd                       ; webserver
+     guide-key                          ; overview of key chords for C x r
      nodejs-repl
      restclient
-     highlight-escape-sequences
+     highlight-escape-sequences         ; highlights escape in java and ruby
      elisp-slime-nav
      git-commit-mode
      gitconfig-mode
@@ -96,23 +96,14 @@
      ein                                ; ipython notebook
      virtualenv                         ; python virtual envs
      jedi                               ; auto complete in emacs
-     autopair                           ; match braces in python
      )))
 
 
 
 ;; Evaluate later
-;; smartparens
 ;; (cons 'elnode marmalade)
 ;; (cons 'abl-mode melpa)
-;; (cons 'ein melpa)
-;; (cons 'elpy melpa)
-;; (cons 'flymake-python-pyflakes melpa)
-;; (cons 'jedi melpa)
-;; (cons 'prelude-python melpa)
-;; (cons 'pyregexp melpa)
-;; (cons 'python-magic melpa)
-;; (cons 'predictive marmalade)
+
 
 
 
@@ -132,15 +123,12 @@
 
 ;; guide-key
 (require 'guide-key)
-(setq guide-key/guide-key-sequence '("C-x r" "C-x 4" "C-x v" "C-x 8"))
+(setq guide-key/guide-key-sequence '("C-x r" "C-x 4" "C-x v" "C-x 8" "C-c"))
 (guide-key-mode 1)
 (setq guide-key/highlight-command-regexp "bookmark")
 (setq guide-key/recursive-key-sequence-flag t)
 (setq guide-key/popup-window-position 'bottom)
 
-;; god-mode
-(require 'god-mode)
-(global-set-key (kbd "<escape>") 'god-local-mode)
 
 ;; Setup extensions
 (eval-after-load 'ido '(require 'setup-ido))
@@ -151,6 +139,7 @@
 (eval-after-load 'shell '(require 'setup-shell))
 (eval-after-load 'python '(require 'setup-python))
 (eval-after-load 'auto-complete '(require 'setup-autocomplete))
+(eval-after-load 'god-mode '(require 'setup-god))
 
 
 ;; Predictive mode
@@ -161,8 +150,8 @@
 (require 'predictive)
 (eval-after-load 'predictive '(require 'setup-predictive))
 
-
-
+(require 'fold-this)
+(require 'god-mode)
 (require 'auto-complete)
 ;; We're setting up fortran by hand
 (require 'setup-fortran)
@@ -180,7 +169,9 @@
 (--each '(css-mode-hook
           restclient-mode-hook
           js-mode-hook
-          markdown-mode)
+          markdown-mode
+          python-mode-hook
+          f90-mode-hook)
   (add-hook it 'turn-on-smartparens-mode))
 
 ;; Language specific setup files
