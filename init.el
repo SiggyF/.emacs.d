@@ -63,6 +63,7 @@
    '(exec-path-from-shell
      melpa
      magit
+     magit-svn
      paredit                            ; for lisp
      move-text
      god-mode                           ; emacs like
