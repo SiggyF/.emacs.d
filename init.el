@@ -97,6 +97,7 @@
      ein                                ; ipython notebook
      virtualenv                         ; python virtual envs
      jedi                               ; auto complete in emacs
+     zenburn-theme                      ; theme
      )))
 
 
