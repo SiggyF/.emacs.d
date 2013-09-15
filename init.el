@@ -98,6 +98,7 @@
      virtualenv                         ; python virtual envs
      jedi                               ; auto complete in emacs
      zenburn-theme                      ; theme
+     solarized-theme                    ; theme
      )))
 
 
@@ -142,6 +143,8 @@
 (eval-after-load 'python '(require 'setup-python))
 (eval-after-load 'auto-complete '(require 'setup-autocomplete))
 (eval-after-load 'god-mode '(require 'setup-god))
+(eval-after-load 'predictive '(require 'setup-predictive))
+(eval-after-load 'rainbow-delimiters '(require 'setup-rainbow-delimiters))
 
 
 ;; Predictive mode
@@ -150,11 +153,11 @@
 (add-to-list 'load-path (expand-file-name "predictive/latex" user-emacs-directory))
 (add-to-list 'load-path (expand-file-name "predictive/texinfo" user-emacs-directory))
 (require 'predictive)
-(eval-after-load 'predictive '(require 'setup-predictive))
 
 (require 'fold-this)
 (require 'god-mode)
 (require 'auto-complete)
+(require 'rainbow-delimiters)
 ;; We're setting up fortran by hand
 (require 'setup-fortran)
 (require 'setup-latex)
