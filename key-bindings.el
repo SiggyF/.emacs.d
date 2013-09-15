@@ -124,6 +124,7 @@
 ;; toggle two most recent buffers
 (fset 'quick-switch-buffer [?\C-x ?b return])
 (global-set-key (kbd "s-b") 'quick-switch-buffer)
+(global-set-key (kbd "C-x o") 'switch-window)
 
 ;; Revert without any fuss
 (global-set-key (kbd "M-<escape>") (λ (revert-buffer t t)))
