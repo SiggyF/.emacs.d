@@ -71,6 +71,10 @@
 (add-to-list 'auto-mode-alist '("\\.jshintrc$" . javascript-mode))
 (add-to-list 'magic-mode-alist '("#!/usr/bin/env node" . js2-mode))
 
+(add-hook 'js2-mode-hook
+          (lambda ()
+            (slime-js-minor-mode 1)))
+
 ;; Configuration files
 (add-to-list 'auto-mode-alist '("\\.offlineimaprc$" . conf-mode))
 
@@ -104,5 +108,6 @@
 ;; These are also fortran files
 (add-to-list 'auto-mode-alist '("\\.ftn" . f90-mode))
 (add-to-list 'auto-mode-alist '("\\.F90" . f90-mode))
+
 
 (provide 'mode-mappings)

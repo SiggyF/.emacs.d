@@ -146,7 +146,8 @@
 (eval-after-load 'god-mode '(require 'setup-god))
 (eval-after-load 'predictive '(require 'setup-predictive))
 (eval-after-load 'rainbow-delimiters '(require 'setup-rainbow-delimiters))
-
+(eval-after-load 'ess-site '(require 'setup-ess))
+(eval-after-load 'slime '(require 'setup-slime))
 
 ;; Predictive mode
 
@@ -155,10 +156,12 @@
 (add-to-list 'load-path (expand-file-name "predictive/texinfo" user-emacs-directory))
 (require 'predictive)
 
+(require 'ess-site)
 (require 'fold-this)
 (require 'god-mode)
 (require 'auto-complete)
 (require 'rainbow-delimiters)
+(require 'slime)
 ;; We're setting up fortran by hand
 (require 'setup-fortran)
 (require 'setup-latex)
@@ -242,6 +245,7 @@
 (require 'project-archetypes)
 (require 'my-misc)
 (when is-mac (require 'mac))
+
 
 ;; Elisp go-to-definition with M-. and back again with M-,
 (autoload 'elisp-slime-nav-mode "elisp-slime-nav")
