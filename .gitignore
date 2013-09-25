@@ -7,8 +7,6 @@ tramp
 elpa
 swank
 emms
-site-lisp/adventur-mode
-site-lisp/slime
 *.elc
 .DS_Store
 .yas-compiled-snippets.el
