@@ -48,7 +48,7 @@ If there's no region, the current line will be duplicated."
 (defun one-shot-keybinding (key command)
   (set-temporary-overlay-map
    (let ((map (make-sparse-keymap)))
-     (define-key map (kbd key) command)
+     (define-key map (read-kbd-macro key) command)
      map) t))
 
 (defun replace-region-by (fn)

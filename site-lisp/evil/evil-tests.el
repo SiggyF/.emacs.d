@@ -155,7 +155,7 @@ Remaining forms are used as-is.
                      ((or (stringp (car-safe form))
                           (vectorp (car-safe form))
                           (memq (car-safe (car-safe form))
-                                '(kbd vconcat)))
+                                '(read-kbd-macro vconcat)))
                       ;; list of strings and vectors: it would be more
                       ;; intuitive to do (mapc 'execute-kbd-macro form),
                       ;; but we need to execute everything as a single
@@ -164,7 +164,7 @@ Remaining forms are used as-is.
                         (apply 'vconcat
                                (mapcar 'listify-key-sequence
                                        (mapcar 'eval ',form)))))
-                     ((memq (car-safe form) '(kbd vconcat))
+                     ((memq (car-safe form) '(read-kbd-macro vconcat))
                       `(execute-kbd-macro ,form))
                      (t
                       form)))
