@@ -8,6 +8,7 @@ elpa
 swank
 emms
 site-lisp/adventur-mode
+site-lisp/slime/contrib/slime-js.el
 *.elc
 .DS_Store
 .yas-compiled-snippets.el
