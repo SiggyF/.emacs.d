@@ -5,5 +5,5 @@
 (when window-system
   (switch-fullscreen)
   )
-(load-theme 'zenburn )
+
 

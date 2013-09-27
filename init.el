@@ -180,7 +180,8 @@
           js-mode-hook
           markdown-mode
           python-mode-hook
-          f90-mode-hook)
+          f90-mode-hook
+          ess-mode-hook)
   (add-hook it 'turn-on-smartparens-mode))
 
 ;; Language specific setup files

@@ -10,5 +10,5 @@
   )
 
 (require 'slime)
-(slime-setup '(slime-js slime-editing-commands slime-js))
+(slime-setup '(slime-js slime-editing-commands))
 (provide 'setup-slime)
