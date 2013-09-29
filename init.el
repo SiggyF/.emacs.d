@@ -100,6 +100,7 @@
      switch-window                      ; window suggestion
      zenburn-theme                      ; theme
      solarized-theme                    ; theme
+     w3m                                ; browse
      )))
 
 
