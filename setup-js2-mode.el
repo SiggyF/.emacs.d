@@ -97,7 +97,7 @@
    ((and (js2-block-node-p (js2-node-at-point)) (looking-at " *}")) ";")
    ((not (eolp)) "")
    ((js2-array-node-p (js2-node-at-point)) (js2r--comma-unless "]"))
-   ((js2-object-node-p (js2-node-at-point)) (concat ": " (js2r--comma-unless "}")))
+   ((js2-object-node-p (js2-node-at-point)) (js2r--comma-unless "}"))
    ((js2-object-prop-node-p (js2-node-at-point)) (js2r--comma-unless "}"))
    ((js2-call-node-p (js2-node-at-point)) (js2r--comma-unless ")"))
    ((js2r--does-not-need-semi) "")
@@ -201,7 +201,7 @@
   (let* ((settings (with-temp-buffer
                      (insert-file-literally file)
                      (javascript-mode)
-                     (let (kill-ring) (kill-comment 1000))
+                     (let (kill-ring kill-ring-yank-pointer) (kill-comment 1000))
                      (->> (buffer-substring (point-min) (point-max))
                        (s-trim)
                        (s-chop-prefix "module.exports = ")
