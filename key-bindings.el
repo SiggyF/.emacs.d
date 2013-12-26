@@ -143,6 +143,7 @@
 (global-set-key (kbd "C-x C--") 'rotate-windows)
 ;;; do zoom like this, zoom-in does not work in full screen
 ;; (global-unset-key (kbd "C-x C-+")) ;; don't zoom like this
+(global-set-key (kbd "<f11>") 'switch-fullscreen)
 
 
 (global-set-key (kbd "C-x 3") 'split-window-right-and-move-there-dammit)

@@ -8,9 +8,11 @@
 (when
     (and (file-exists-p slime-filename) (not (file-exists-p slime-linkname)))
   ;; Only setup slime if both exist
-     (make-symbolic-link slime-filename slime-linkname)
-     (slime-setup '(slime-js ))
-
+  (make-symbolic-link slime-filename slime-linkname)
+  )
+(when
+    (file-exists-p slime-linkname)
+  (slime-setup '(slime-js ))
   )
 
 (slime-setup '(slime-editing-commands))
