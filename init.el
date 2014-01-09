@@ -95,6 +95,7 @@
      cider-tracing
      nrepl
      ess                                ; for R
+     r-autoyas                          ; r extra
      auctex                             ; latex
      epc                                ; communicating with jedi
      rainbow-mode                       ; for css colors
@@ -102,10 +103,12 @@
      virtualenv                         ; python virtual envs
      jedi                               ; auto complete in emacs
      switch-window                      ; window suggestion
+     esqlite                            ; sqlite
      zenburn-theme                      ; theme
      solarized-theme                    ; theme
      w3m                                ; browse
      coffee-mode                        ; coffee script
+     achievements                       ; monsterstroke....
      )))
 
 
@@ -166,6 +169,11 @@
 (require 'auto-complete)
 (require 'rainbow-delimiters)
 (require 'slime)
+(require 'keyfreq)
+(keyfreq-mode 1)
+
+
+(require 'achievements)
 ;; We're setting up fortran by hand
 (require 'setup-fortran)
 (require 'setup-latex)
