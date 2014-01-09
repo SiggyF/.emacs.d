@@ -8,6 +8,7 @@
         end-of-buffer
         f90-electric-insert
         kill-region-or-backward-word
+        org-self-insert-command
         paredit-kill
         python-indent-electric-colon
         save-region-or-current-line
@@ -15,6 +16,7 @@
         sp--self-insert-command
         sp-remove-active-pair-overlay
         tagedit-insert-quote
+        tex-terminate-paragraph
         yas-expand
         ))
 
@@ -27,4 +29,5 @@
         mouse-buffer-menu
         python-indent-dedent-line-backspace
         switch-window
+        yank-unindented
         ))
