@@ -8,6 +8,8 @@
         end-of-buffer
         f90-electric-insert
         kill-region-or-backward-word
+        org-beginning-of-line
+        org-kill-line
         org-self-insert-command
         paredit-kill
         python-indent-electric-colon
@@ -27,6 +29,7 @@
         f90-indent-new-line
         ido-find-file
         mouse-buffer-menu
+        org-demote-subtree
         python-indent-dedent-line-backspace
         switch-window
         yank-unindented
