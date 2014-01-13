@@ -91,6 +91,7 @@
      clojure-mode
      clojure-test-mode
      groovy-mode
+     prodigy
      cider
      cider-tracing
      nrepl
@@ -140,7 +141,6 @@
 (setq guide-key/recursive-key-sequence-flag t)
 (setq guide-key/popup-window-position 'bottom)
 
-
 ;; Setup extensions
 (eval-after-load 'ido '(require 'setup-ido))
 (eval-after-load 'org '(require 'setup-org))
@@ -183,6 +183,9 @@
 (require 'setup-ffip)
 (require 'setup-html-mode)
 (require 'setup-paredit)
+
+(require 'prodigy)
+(global-set-key (kbd "C-x M-m") 'prodigy)
 
 ;; Font lock dash.el
 (eval-after-load "dash" '(dash-enable-font-lock))
