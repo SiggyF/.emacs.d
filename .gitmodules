@@ -138,4 +138,4 @@
 	url = https://github.com/slime/slime.git
 [submodule "site-lisp/helm"]
 	path = site-lisp/helm
-	url = https://github.com/emacs-helm/helm
+	url = https://github.com/emacs-helm/helm.git
