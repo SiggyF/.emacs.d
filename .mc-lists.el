@@ -26,17 +26,40 @@
         change-number-at-point
         change-number-at-point
         change-outer
+        cider-eval-last-sexp
         clj-hippie-expand-no-case-fold
+        cljr-cycle-coll
+        cljr-unwind
         cua-replace-region
         cua-set-mark
         delete-blank-lines
         delete-horizontal-space
         delete-indentation
         dired-back-to-start-of-files
+        down-list
         duplicate-current-line-or-region
         end-of-buffer
         ess-smart-comma
         f90-electric-insert
+        eval-and-replace
+        eval-last-sexp
+        fold-this
+        forward-paragraph
+        forward-sentence
+        forward-sexp
+        god-mode-repeat
+        hippie-expand-no-case-fold
+        html-paragraph
+        html-wrap-in-tag
+        insert-postfix-whitespace
+        js2-beginning-of-line
+        js2-end-of-line
+        js2-insert-and-indent
+        js2r-inline-var
+        js2r-move-line-up
+        js2r-split-string
+        js2r-var-to-this
+        kill-and-retry-line
         kill-region-or-backward-word
         kill-sexp
         live-cycle-clj-coll

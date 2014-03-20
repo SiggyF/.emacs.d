@@ -199,6 +199,8 @@
 (--each '(css-mode-hook
           restclient-mode-hook
           js-mode-hook
+          java-mode
+          ruby-mode
           markdown-mode
           python-mode-hook
           f90-mode-hook
