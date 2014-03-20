@@ -110,6 +110,8 @@
      w3m                                ; browse
      coffee-mode                        ; coffee script
      achievements                       ; monsterstroke....
+     ac-etags                           ; autocomplete tags
+     mmm-mako                           ; Mako templates
      )))
 
 
@@ -155,6 +157,7 @@
 (eval-after-load 'rainbow-delimiters '(require 'setup-rainbow-delimiters))
 (eval-after-load 'ess-site '(require 'setup-ess))
 (eval-after-load 'slime '(require 'setup-slime))
+(eval-after-load 'helm'(require 'setup-helm))
 
 ;; Predictive mode
 
@@ -169,9 +172,9 @@
 (require 'auto-complete)
 (require 'rainbow-delimiters)
 (require 'slime)
+(require 'helm)
 (require 'keyfreq)
 (keyfreq-mode 1)
-
 
 (require 'achievements)
 ;; We're setting up fortran by hand

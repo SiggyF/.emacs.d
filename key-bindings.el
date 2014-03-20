@@ -12,10 +12,12 @@
 (global-set-key (kbd "s-.") 'copy-from-above-command)
 
 ;; smart M-x
-(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-x") 'helm-M-x)
+
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
+(global-set-key (kbd "C-c h") 'helm-mini)
 ;; Expand region (increases selected region by semantic units)
 (global-set-key (kbd "C-=") 'er/expand-region)
 

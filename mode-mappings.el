@@ -75,12 +75,13 @@
 (add-to-list 'magic-mode-alist '("#!/usr/bin/env node" . js2-mode))
 
 
-(add-hook 'js2-mode-hook
-          (lambda ()
-            (slime-js-minor-mode 1)))
+;; (add-hook 'js2-mode-hook
+;;           (lambda ()
+;;             (slime-js-minor-mode 1)))
 
 ;; Configuration files
 (add-to-list 'auto-mode-alist '("\\.offlineimaprc$" . conf-mode))
+(add-to-list 'auto-mode-alist '("\\.mdu$" . conf-mode))
 
 ;; Snippets
 (add-to-list 'auto-mode-alist '("yasnippet/snippets" . snippet-mode))
