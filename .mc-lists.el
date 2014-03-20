@@ -3,9 +3,9 @@
 
 (setq mc/cmds-to-run-for-all
       '(
-        change-number-at-point
-        delete-horizontal-space
+        TeX-insert-backslash
         ac-complete
+        ace-jump-move
         adv-dash
         adv-dot
         adv-enter
@@ -24,15 +24,18 @@
         c-electric-star
         change-inner
         change-number-at-point
+        change-number-at-point
         change-outer
         clj-hippie-expand-no-case-fold
         cua-replace-region
         cua-set-mark
         delete-blank-lines
+        delete-horizontal-space
         delete-indentation
         dired-back-to-start-of-files
         duplicate-current-line-or-region
         end-of-buffer
+        ess-smart-comma
         f90-electric-insert
         kill-region-or-backward-word
         kill-sexp
@@ -45,6 +48,7 @@
         move-text-up
         move-to-window-line-top-bottom
         new-line-above
+        new-line-dwim
         open-line-above
         open-line-and-indent
         open-line-below
@@ -73,19 +77,25 @@
         paredit-forward-up
         paredit-join-sexps
         paredit-kill
+        paredit-kill-region-or-backward-word
+        paredit-newline
+        python-indent-dedent-line
         python-indent-electric-colon
         save-region-or-current-line
+        sgml-tag
         smex
         sp--self-insert-command
         sp-remove-active-pair-overlay
+        tagedit-insert-equal
+        tagedit-insert-lt
         tagedit-insert-quote
-        tex-terminate-paragraph
         tagedit-kill
         tagedit-kill-attribute
         tagedit-maybe-insert-slash
         tagedit-raise-tag
         tagedit-splice-tag
         tern-ac-dot-complete
+        tex-terminate-paragraph
         toggle-assert-refute
         toggle-quotes
         touch-buffer-file
@@ -101,14 +111,6 @@
 (setq mc/cmds-to-run-once
       '(
         ace-jump-mode
-        f90-beginning-of-block
-        f90-indent-new-line
-        ido-find-file
-        mouse-buffer-menu
-        org-demote-subtree
-        python-indent-dedent-line-backspace
-        switch-window
-        yank-unindented
         adv-insert-new-number
         beginning-of-buffer
         cleanup-buffer
@@ -116,10 +118,14 @@
         dired-toggle-read-only
         edebug-next-mode
         eval-expression
+        f90-beginning-of-block
+        f90-indent-new-line
         find-tag
         god-local-mode
         goto-line-with-feedback
         handle-switch-frame
+        helm-confirm-and-exit-minibuffer
+        ido-find-file
         ido-switch-buffer
         js2r-extract-var
         js2r-rename-var
@@ -128,12 +134,17 @@
         magit-status
         mc/add-cursor-on-click
         mc/add-cursors-to-all-matches
+        mouse-buffer-menu
         multiple-cursors-mode
         ns-prev-frame
+        org-demote-subtree
         persp-switch
+        python-indent-dedent-line-backspace
         shell
         smex
+        switch-window
         wgrep-change-to-wgrep-mode
         wgrep-finish-edit
         wgrep-save-all-buffers
+        yank-unindented
         ))
