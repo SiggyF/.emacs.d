@@ -61,12 +61,9 @@
 (defun init--install-packages ()
   (packages-install
    '(exec-path-from-shell
-     melpa
      magit
-     magit-svn
      paredit                            ; for lisp
      move-text
-     god-mode                           ; emacs like
      gist
      htmlize
      visual-regexp
@@ -89,12 +86,13 @@
      gitconfig-mode
      gitignore-mode
      clojure-mode
-     clojure-test-mode
      groovy-mode
      prodigy
      cider
      cider-tracing
-     nrepl
+     magit-svn
+     clojure-test-mode
+     god-mode                           ; emacs like
      ess                                ; for R
      r-autoyas                          ; r extra
      auctex                             ; latex
