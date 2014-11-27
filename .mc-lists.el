@@ -3,7 +3,10 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        LaTeX-babel-insert-hyphen
+        LaTeX-insert-left-brace
         TeX-insert-backslash
+        TeX-insert-quote
         ac-complete
         ace-jump-move
         adv-dash
@@ -14,6 +17,7 @@
         adv-tab
         back-to-indentation-or-beginning
         backward-sexp
+        beginning-of-visual-line
         c-electric-backspace
         c-electric-colon
         c-electric-delete-forward
@@ -40,14 +44,15 @@
         duplicate-current-line-or-region
         end-of-buffer
         ess-smart-comma
-        f90-electric-insert
         eval-and-replace
         eval-last-sexp
+        f90-electric-insert
         fold-this
         forward-paragraph
         forward-sentence
         forward-sexp
         god-mode-repeat
+        helm-M-x
         hippie-expand-no-case-fold
         html-paragraph
         html-wrap-in-tag
@@ -62,6 +67,7 @@
         kill-and-retry-line
         kill-region-or-backward-word
         kill-sexp
+        kill-visual-line
         live-cycle-clj-coll
         magit-stage-item
         markdown-enter-key
@@ -105,6 +111,7 @@
         python-indent-dedent-line
         python-indent-electric-colon
         save-region-or-current-line
+        sgml-close-tag
         sgml-tag
         smex
         sp--self-insert-command
@@ -140,6 +147,7 @@
         describe-key
         dired-toggle-read-only
         edebug-next-mode
+        end-of-visual-line
         eval-expression
         f90-beginning-of-block
         f90-indent-new-line
@@ -155,17 +163,22 @@
         jump-between-source-and-test-files
         kmacro-end-or-call-macro
         magit-status
+        mark-whole-buffer
         mc/add-cursor-on-click
         mc/add-cursors-to-all-matches
         mouse-buffer-menu
         multiple-cursors-mode
         ns-prev-frame
         org-demote-subtree
+        paredit-close-curly
+        paredit-open-curly
+        paredit-open-square
         persp-switch
         python-indent-dedent-line-backspace
         shell
         smex
         switch-window
+        tagedit-insert-dot
         wgrep-change-to-wgrep-mode
         wgrep-finish-edit
         wgrep-save-all-buffers
