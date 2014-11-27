@@ -14,3 +14,8 @@ emms
 .mc-lists.el
 .cask
 ac-comphist.dat
+*.notes
+ede-projects.el
+history
+semanticdb/
+request/
