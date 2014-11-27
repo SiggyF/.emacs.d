@@ -110,6 +110,9 @@
      achievements                       ; monsterstroke....
      ac-etags                           ; autocomplete tags
      mmm-mako                           ; Mako templates
+     rvm                                ; Default ruby
+     fortpy                             ; fortran auto complete
+     latex-preview-pane                 ; preview latex
      )))
 
 
