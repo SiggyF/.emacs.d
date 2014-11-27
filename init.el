@@ -14,15 +14,20 @@
 ;; Set path to dependencies
 (setq site-lisp-dir
       (expand-file-name "site-lisp" user-emacs-directory))
+
+;; Set up load path
+(setq user-lisp-dir
+      (expand-file-name "lisp" user-emacs-directory))
+	  
 ;; Add the predictive path early
 (add-to-list 'load-path (expand-file-name "predictive" user-emacs-directory))
 
 ;; Set up load path
-(add-to-list 'load-path user-emacs-directory)
+(add-to-list 'load-path user-lisp-dir)
 (add-to-list 'load-path site-lisp-dir)
 
 ;; Keep emacs Custom-settings in separate file
-(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+(setq custom-file (expand-file-name "custom.el" user-lisp-dir))
 (load custom-file)
 
 ;; Set up appearance early
