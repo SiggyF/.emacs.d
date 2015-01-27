@@ -94,9 +94,7 @@
      groovy-mode
      prodigy
      cider
-     cider-tracing
      magit-svn
-     clojure-test-mode
      god-mode                           ; emacs like
      ess                                ; for R
      r-autoyas                          ; r extra
