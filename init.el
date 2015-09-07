@@ -106,6 +106,7 @@
      ein                                ; ipython notebook
      virtualenv                         ; python virtual envs
      jedi                               ; auto complete in emacs
+     cython-mode                        ; cython
      switch-window                      ; window suggestion
      esqlite                            ; sqlite
      zenburn-theme                      ; theme
@@ -118,6 +119,8 @@
      rvm                                ; Default ruby
      fortpy                             ; fortran auto complete
      latex-preview-pane                 ; preview latex
+     erc-social-graph                   ;; social graph of irc
+     glsl-mode                          ; shaders
      )))
 
 
